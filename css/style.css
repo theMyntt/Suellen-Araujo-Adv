@@ -1,0 +1,242 @@
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter-Regular.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter-Black.ttf");
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: #fff; */
+}
+
+main {
+    overflow: hidden;
+}
+
+header,
+#menu-options {
+    padding: 0 40px;
+}
+
+#menu {
+    height: 24px;
+    display: none;
+}
+
+#menu-options {
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#menu-options ul {
+    display: flex;
+}
+
+#menu-options ul li {
+    margin: 0 20px 0 0;
+}
+
+#menu-options ul li:last-child {
+    margin: 0;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+label {
+    display: grid;
+}
+
+li a:hover {
+    color: #00f;
+}
+
+#container div hr {
+    height: 4px;
+    width: 100vw;
+    border: 0;
+    background-color: #000;
+}
+
+.brand-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    /* width: 100%; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 75px;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.card img {
+    margin-right: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    height: 50px;
+    background-color: #000;
+    border-radius: 10px;
+    width: 100%;
+    border: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+.whatsapp {
+    margin-right: 20px;
+}
+
+#logo-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+#brand-article {
+    text-align: center;
+}
+
+#brand-article #brand-text {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+
+    #menu-options {
+        display: none;
+        height: 175px;
+        align-items: center;
+    }
+
+    #menu-options ul {
+        display: block;
+    }
+
+    #menu-options ul li {
+        margin: 0 0 15px 0;
+    }
+
+    #menu-options ul li:last-child {
+        margin: 0;
+    }
+
+    #top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #container {
+        margin-top: 4cm;
+        padding: 0 30px;
+    }
+
+    .card-control .card {
+        margin: 0 0 15px 0;
+    }
+
+    .card-control .card:last-child {
+        margin: 0;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+.input {
+    /* border: 2px solid #000; */
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    height: 40px;
+}
+
+.no-grid {
+    display: contents;
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .card-control {
+        margin: 0 10px;
+    }
+
+    .card {
+        margin: 0 0 15px 0;
+    }
+    .card:last-child {
+        margin: 0;
+    }
+}
